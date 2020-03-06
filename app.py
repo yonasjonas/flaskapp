@@ -14,7 +14,7 @@ def hello_world():
     return json.dumps(info, sort_keys=True, indent=444)
 
 
-if __name__ == '__main__'
+if __name__ == '__main__':
 
     debug = True
     app.run(host='551.105.52.133', port=8080)
