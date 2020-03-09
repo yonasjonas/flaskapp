@@ -17,4 +17,4 @@ def hello_world():
 if __name__ == '__main__':
 
     debug = True
-    app.run(host='0.0.0.0')
+    app.run(host='23.100.29.86')
