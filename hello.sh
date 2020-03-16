@@ -1,5 +1,4 @@
 #! /bin/bash
-
 sudo apt-get -y update
 mkdir py
 cd py
