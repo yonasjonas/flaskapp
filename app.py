@@ -8,10 +8,10 @@ def status_info():
 
     info = {}
     info['hostname'] = socket.gethostname()
-    info['ip-address'] = socket.gethostbyname(socket.gethostname())
-    info['processor count'] = multiprocessing.cpu_count()
-    info['pram'] = str(round(psutil.virtual_memory().total / (1024.0 ** 3))) + " GB"
-    return json.dumps(info, sort_keys=True, indent=1)
+    info['ip_address'] = socket.gethostbyname(socket.gethostname())
+    info['cpus'] = multiprocessing.cpu_count()
+    info['memory'] = str(round(psutil.virtual_memory().total / (1024.0 ** 3))) + " GB"
+    return json.dumps(info, sort_keys=False, indent=4)
 
 
 if __name__ == '__main__':
